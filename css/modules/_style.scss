@@ -66,8 +66,8 @@ ul {
   }
   a{
     color: $black;
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 14px;
     letter-spacing: 1.3px;
     //font-family: $main-b;
     -webkit-transition: all 0.5s ease;
@@ -87,6 +87,7 @@ ul {
     }
   }
 }
+
 .box-sub-menu-top{
   border: medium none;
   font-family: $main;
@@ -129,12 +130,18 @@ section.box-content{
 }
 .sidebar{
   background: transparent;
+  padding-left: 10px;
+  padding-right: 10px;
   .form-search-house{
       background: $white;
       border-radius: 3px;
+    padding: 8px;
   }
 }
-
+.form-control{
+  font-size: 12px;
+  padding: 5px;
+}
 .box-check-species{
   padding-bottom: 10px;
   .nav-tabs{
@@ -142,7 +149,7 @@ section.box-content{
     a{
       color: $black;
       border: none;
-      font-size: 12px;
+      font-size: 10px;
       text-transform: uppercase;
       padding: 4px;
       text-decoration: none;
@@ -162,7 +169,6 @@ section.box-content{
 
 .items_title_color{
   height: initial;
-  margin-bottom: 20px;
   h2{
     font-size: 20px;
     color: $black;
@@ -177,12 +183,12 @@ section.box-content{
   }
 }
 .item-special{
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
 }
 .box-shop-item{
   border: 1px solid $gray-light;
-  padding: 10px;
+  padding: 5px;
   border-radius: 3px;
   background: $white;
   .title-content-product, .price-content-product{
@@ -197,17 +203,18 @@ section.box-content{
   .title-content-product{
     a{
       line-height: 25px;
-      padding: 15px 0;
+      padding: 10px 0;
       display: block;
       color: $blue-light;
       font-family: $main-b;
+      font-size: 14px;
     }
   }
   .price-content-product{
     padding: 16px 0;
     span{
       background: $orange;
-      padding: 8px 5px;
+      padding: 5px;
       border-radius: 5px;
       color: white;
       font-size: 14px;
@@ -245,9 +252,10 @@ section.box-content{
   }
 }
 .blog-sidebar{
+  padding-left: 10px;
+  padding-right: 10px;
   .advertisement{
     background: $white;
-    padding: 10px;
     border-radius: 3px;
   }
   img{
@@ -259,7 +267,6 @@ section.box-content{
 /*css quick search*/
 .box-quick-search{
   a{
-    padding: 10px;
     display: inline-block;
     float: left;
     margin-right: 5px;
@@ -271,7 +278,8 @@ section.box-content{
     text-decoration: none;
     color: $white;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 11px;
+    padding: 10px 5px;
   }
   a:hover{
     opacity: 0.6;
@@ -306,8 +314,8 @@ section.box-content{
     a{
       color: $orange;
       text-transform: uppercase;
-      font-weight: bold;
-      font-size: 18px;
+      font-family: $main-b;
+      font-size: 14px;
     }
   }
   .info-item{
@@ -423,7 +431,6 @@ section.box-content{
   background: $black-dark;
   padding: 14px 0;
   color: #797979;
-  line-height: 34px;
   opacity: .8;
   a{
     text-decoration: none;

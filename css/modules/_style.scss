@@ -271,7 +271,6 @@ section.box-content{
     width: 100%;
   }
 }
-
 /*css quick search*/
 .box-quick-search{
   a{
@@ -436,17 +435,31 @@ section.box-content{
 /*box chọn hướng nhà phải*/
 .fix-box-left{
   background: $white;
-  padding: 10px;
   font-size: 14px;
-  .title-head{
-    padding-bottom: 7px;
-    border-radius: 1px solid $gray-light;
-    margin-bottom: 5px;
-    font-size: 18px;
-
+}
+.box-detail-item{
+  background: $white;
+  padding: 15px;
+  @include radius(3px);
+  h1{
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: $green;
+    color: $white;
+    padding-left: 15px;
+    @include radius(3px);
   }
 }
-
+.vmt-form-post{
+  margin-bottom: 25px;
+  label{
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+  .post-news-choose-image{
+    width:100%;
+  }
+}
 /*footer css*/
 .footer{
   padding: 100px 0;

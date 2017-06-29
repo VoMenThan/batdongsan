@@ -142,117 +142,196 @@
         <section class="box-content row">
         <!--main-->
             <main class="col-xl-9 col-lg-9">
-                <div class="box-detail-item box-view-detail">
-                    <ul class="box-breadcrumb">
-                        <li><a href="#">Trang chủ</a>/</li>
-                        <li><a href="#">Bất động sản</a>/</li>
-                        <li><a href="#">SẮP RA MẮT CĂN HỘ CAO CẤP NHẤT THÀNH VINH T&T VICTORIA SỐ 1 QUANG TRUNG</a></li>
-                    </ul>
-                    <h1>
-                        SẮP RA MẮT CĂN HỘ CAO CẤP NHẤT THÀNH VINH T&T VICTORIA SỐ 1 QUANG TRUNG
-                    </h1>
-                    <div class="row row-item">
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Địa chỉ: </span>
-                            <span class="text-content">Thôn 7, Tân Hoá, Nghệ An</span>
+                <div class="box-detail-item">
+                    <h1>THÔNG TIN CHUNG</h1>
+                    <form method="" action="#" id="vmt-form-post-item">
+                        <div class="vmt-form-post form-group">
+                            <label for="post-news-title">Tiêu đề</label>
+                            <input type="text" class="form-control" id="post-news-title" placeholder="Nhập tiêu đề">
                         </div>
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-road fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Đường: </span>
-                            <span class="text-content">457 Cách mạng tháng 8</span>
-                        </div>
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-calendar-check-o fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Ngày đăng: </span>
-                            <span class="text-content">15/6/2017</span>
+                        <div class="vmt-form-post form-group">
+                            <label for="post-news-pecies">Loại bất động sản</label>
+                            <input type="text" class="form-control" id="post-news-pecies" placeholder="Nhập loại bđs">
                         </div>
 
-                    </div>
-                    <div class="row row-item">
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-area-chart fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Diện tích: </span>
-                            <span class="text-content">200m<sup>2</sup></span>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-long">Chiều dài</label>
+                                <input type="text" class="form-control" id="post-news-long" placeholder="Nhập chiều dài">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-width">Chiều rộng</label>
+                                <input type="text" class="form-control" id="post-news-width" placeholder="Nhập chiều rộng">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-acreage">Diện tích</label>
+                                <input type="text" class="form-control" id="post-news-acreage" placeholder="Nhập diện tích">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-juridical">Pháp lý</label>
+                                <select class="form-control" id="post-news-juridical">
+                                    <option>Sổ hồng</option>
+                                    <option>Sổ xanh</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-mortar-board fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Pháp lý: </span>
-                            <span class="text-content">Sổ hồng</span>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-price">Giá</label>
+                                <input type="text" class="form-control" id="post-news-price" placeholder="Nhập giá">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-unit">Đơn vị tính</label>
+                                <select class="form-control" id="post-news-unit">
+                                    <option>Triệu</option>
+                                    <option>Tỷ</option>
+                                </select>
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-start">Ngày bắt đầu</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="post-news-start" placeholder="Nhập ngày">
+                                    <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-end">Ngày kết thúc</label>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="post-news-end" placeholder="Nhập ngày">
+                                    <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-location-arrow fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Hướng nhà: </span>
-                            <span class="text-content">Đông</span>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-living-room">Số phòng khách</label>
+                                <input type="text" class="form-control" id="post-news-living-room" placeholder="Nhập số phòng">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-bedroom">Số phòng ngủ</label>
+                                <input type="text" class="form-control" id="post-news-bedroom" placeholder="Nhập số phòng">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-kitchen">Số phòng bếp</label>
+                                <input type="text" class="form-control" id="post-news-kitchen" placeholder="Nhập số phòng">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-bathroom">Số phòng tắm</label>
+                                <input type="text" class="form-control" id="post-news-bathroom" placeholder="Nhập số phòng">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-other">Số phòng khác</label>
+                                <input type="text" class="form-control" id="post-news-other" placeholder="Nhập số phòng">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-donate">Số tầng</label>
+                                <input type="text" class="form-control" id="post-news-donate" placeholder="Nhập số tầng">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-incense">Hướng nhà</label>
+                                <select class="form-control" id="post-news-incense">
+                                    <option>Đông</option>
+                                    <option>Tây</option>
+                                    <option>Nam</option>
+                                    <option>Bắc</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-nation">Đưa tin lên vị trí đầu</label>
+                                <select class="form-control" id="post-news-nation">
+                                    <option>Up tin</option>
+                                </select>
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-province">Tỉnh thành</label>
+                                <select class="form-control" id="post-news-province">
+                                    <option>Nghệ an</option>
+                                </select>
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-district">Quận/Huyện</label>
+                                <select class="form-control" id="post-news-district">
+                                    <option>Cửa lò</option>
+                                </select>
+                            </div>
+                            <div class="vmt-form-post form-group col-md-3">
+                                <label for="post-news-street">Phường xã</label>
+                                <select class="form-control" id="post-news-street">
+                                    <option>Đông quan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-6">
+                                <label for="post-news-road">Đường phố</label>
+                                <input type="text" class="form-control" id="post-news-road" placeholder="Nhập tên đường">
+                            </div>
+                            <div class="vmt-form-post form-group col-md-6">
+                                <label for="post-news-google-map">Google Map</label>
+                                <input type="text" class="form-control" id="post-news-google-map" placeholder="Nhập địa chỉ google map">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-12">
+                                <label for="post-news-project">Chọn dự án</label>
+                                <select class="form-control" id="post-news-project">
+                                    <option>Ba son</option>
+                                </select>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="row row-item">
-                        <div class="col-md-12 detail-item">
-                            <i class="fa fa-home fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Phòng ốc: </span>
-                            <span class="text-content">1 phòng khách 2 phòng ngủ 1 phòng bếp 1 phòng tắm</span>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-6">
+                                <label for="post-news-furniture">Nội thất</label>
+                                <textarea class="form-control" id="post-news-furniture" rows="3"></textarea>
+                            </div>
+                            <div class="vmt-form-post form-group col-md-6">
+                                <label for="post-news-description">Mô tả</label>
+                                <textarea class="form-control" id="post-news-description" rows="3"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row row-item">
-                        <div class="col-md-12 detail-item">
-                            <i class="fa fa-bathtub fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Nội thất: </span>
-                            <span class="text-content">hoàn thiện nội thất gắn tường</span>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-12">
+                                <label for="post-news-image-avatar">Ảnh đại diện</label>
+                                <label class="custom-file post-news-choose-image">
+                                    <input type="file" id="post-news-image-avatar" class="custom-file-input">
+                                    <span class="custom-file-control"></span>
+                                </label>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row row-item">
-                        <div class="col-md-12 detail-item">
-                            <i class="fa fa-comment-o fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Mô tả: </span>
-                            <span class="text-content">Toà nhà sẽ gồm 2 khối căn hộ cao 28 tầng trong đó căn hộ bắt đầu từ tầng 6, được gọi là TA và TB liên thông với tổng số 21 căn hộ/sàn. Sẽ có 2 khu thang máy với tổng số 6 thang máy.</span>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-12">
+                                <label for="post-news-image-album">Album ảnh</label>
+                                <label class="custom-file post-news-choose-image">
+                                    <input type="file" id="post-news-image-album" class="custom-file-input">
+                                    <span class="custom-file-control"></span>
+                                </label>
+                            </div>
                         </div>
-                    </div>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-12">
+                                <label for="post-news-content">Nội dung</label>
+                                <textarea class="form-control" id="post-news-content" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="vmt-form-post form-group col-md-12">
+                                <label for="post-news-tag">Nhãn</label>
+                                <input type="text" class="form-control" id="post-news-tag" placeholder="Nhập tên nhãn">
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success">Đăng tin</button>
+                        <button type="button" class="btn btn-danger">Huỷ bỏ</button>
+                    </form>
 
-                    <div class="row row-item">
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-address-card fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Liên hệ: </span>
-                            <span class="text-content">Võ Mến Thân</span>
-                        </div>
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Email: </span>
-                            <span class="text-content">mrthancn12@gmail.com</span>
-                        </div>
-                        <div class="col-md-4 detail-item">
-                            <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-                            <span class="text-title">Điện thoại: </span>
-                            <span class="text-content">01695017160</span>
-                        </div>
-                    </div>
-                    <!--slider detail-->
-                    <div class="slider-home row">
-                        <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
-                            <!-- Loading Screen -->
-                            <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('images/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
-                            <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
-                                <div>
-                                    <img data-u="image" src="images/slider-re1.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="images/slider-re2.jpg" />
-                                </div>
-                                <div>
-                                    <img data-u="image" src="images/slider-re3.jpg" />
-                                </div>
-                            </div>
-                            <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
-                                <div data-u="prototype"></div>
-                            </div>
-                            <div data-u="arrowleft" class="jssora031" style="width:50px;height:50px;top:0px;left:20px;" data-autocenter="2">
-                                <i class="fa fa-chevron-left" aria-hidden="true"></i>
-                            </div>
-                            <div data-u="arrowright" class="jssora031" style="width:50px;height:50px;top:0px;right:20px;" data-autocenter="2">
-                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
                 </div>
 
                 <!--title bất động sản nổi bật-->
@@ -616,9 +695,7 @@
         <!--end box footer-->
     </div>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script>
-        jssor_1_slider_init();
-    </script>
+
 <script src="js/jquery-3.1.1.slim.min.js"></script>
 <script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

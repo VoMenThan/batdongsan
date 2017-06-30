@@ -27,12 +27,15 @@ ul {
     margin-bottom: 0;
     li{
       padding: 10px;
+      float: left;
       a{
         color: #bda87f;
         font-size: 15px;
         border: 1px solid $black-brow;
         @include transition(0.7s);
         @include border-radius(5px);
+        width: 125px;
+        text-align: center;
       }
       a:hover{
         text-decoration: none;
@@ -48,38 +51,58 @@ ul {
   }
 }
 .box-holine{
+  text-align: right;
   .hotline-mail{
     display: inline-block;
     line-height: 30px;
   }
 }
+.nav-top{
+  height: 60px;
+  background: $white;
+  .bars-nav{
+    display: none;
+  }
+}
 .menu-top{
   margin: 0;
   padding: 0;
-  li{
+  height: 100%;
+  .item-menu{
     height:100%;
     position: relative;
-    border-top: 1px solid $gray;
+    display: inline-block;
+    &:hover{
+      background: $gray;
+    }
     &:first-child{
       border-top: 0;
     }
+    &>a{
+       color: $black;
+       font-size: 14px;
+       line-height: 50px;
+       height: 60px;
+       letter-spacing: 1.3px;
+       //font-family: $main-b;
+       -webkit-transition: all 0.5s ease;
+       transition: all 0.5s ease;
+       text-transform: uppercase;
+       text-decoration: none;
+     }
+    .icon-mobile{
+      display: none;
+    }
   }
-  a{
-    color: $black;
-    font-size: 14px;
-    line-height: 14px;
-    letter-spacing: 1.3px;
-    //font-family: $main-b;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    text-transform: uppercase;
-    text-decoration: none;
+  .login-mobile{
+    display: none;
   }
+
   a:hover, a.active{
     color: $yellow-gold;
   }
   a:hover{
-    opacity: 0.8;
+    background: $gray;
   }
   .parent-sub:hover{
     .dropdown-menu{
@@ -97,7 +120,7 @@ ul {
   min-width: 250px;
   margin: 0;
   padding: 0;
-  left: 25px;
+  left: 0;
   transition: all .3s linear 0;
   -moz-transition: all .3s linear 0;
   -webkit-transition: all .3s linear 0;
@@ -623,6 +646,112 @@ section.box-content{
 @include respond-to($break-1199){
   .one-show-desktop{
     display: none;
+  }
+  .menu-home{
+    a{
+      padding: 5px 10px;
+    }
+  }
+}
+@include respond-to($break-1000){
+  .menu-top{
+    text-align: right;
+    .item-menu{
+      &> a{
+        font-size: 13px;
+      }
+    }
+  }
+  .menu-home {
+    .signup{
+      text-align: center;
+      li{
+        float: none;
+        display: inline-block;
+      }
+    }
+  }
+  .box-holine{
+    text-align: center;
+  }
+}
+@include respond-to($break-767){
+  .nav-main-menu{
+    padding:0;
+    .bars-nav{
+      padding: 10px;
+      display: block;
+      background: $gray-dark;
+      text-align: right;
+      cursor: pointer;
+      .btn-menu{
+        font-size: 40px;
+        color: #fff;
+        padding-right: 10px;
+        cursor: pointer;
+      }
+      .home-mobile{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .post-mobile{
+        position: absolute;
+        top: 0;
+        left: calc(50% - 24px);
+        color: $white;
+      }
+    }
+    .menu-top{
+      height: 0;
+      background: $brow-light;
+      text-align: left;
+      .item-menu{
+        display: block;
+        border-bottom: 1px solid $black-dark;
+        position: relative;
+        &>a{
+          color: $white;
+        }
+        &>a:hover{
+          color: $black;
+        }
+        &>.active{
+          color: $black;
+          background: $gray;
+        }
+        .icon-arrow-rigt{
+          position: absolute;
+          right: 30px;
+          top: 5px;
+          font-size: 22px;
+        }
+        .icon-mobile{
+          display: inline-block;
+        }
+      }
+      .login-mobile{
+        display: block;
+      }
+    }
+    .menu-top.open{
+      height: auto;
+    }
+  }
+  .menu-top {
+    .parent-sub:hover {
+      .dropdown-menu{
+        display: none;
+      }
+    }
+  }
+  .nav-top{
+    height: auto;
+  }
+  .menu-home {
+    .hotline{
+      display: none;
+    }
   }
 }
 

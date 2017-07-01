@@ -3,6 +3,10 @@
   font-family: $main;
   background: $gray;
 }
+.bg-color-gray{
+  max-width: 1920px;
+  margin: 0 auto;
+}
 a{
   color: $yellow-gold;
 }
@@ -62,6 +66,11 @@ ul {
   background: $white;
   .bars-nav{
     display: none;
+  }
+  .logo-bat-dong-san{
+    a{
+      padding: 0;
+    }
   }
 }
 .menu-top{
@@ -162,6 +171,12 @@ section.box-content{
     .form-control{
     font-size: 12px;
     padding: 10px;
+    }
+  }
+  .vmt-advertisement{
+    img{
+      width: 100%;
+      margin-top: 20px;
     }
   }
 }
@@ -289,8 +304,6 @@ section.box-content{
   }
 }
 .blog-sidebar{
-  padding-left: 10px;
-  padding-right: 10px;
   .advertisement{
     background: $white;
     border-radius: 3px;
@@ -520,9 +533,9 @@ section.box-content{
       display: inline-block;
       a{
         display: inline-block;
-        padding: 10px 20px;
+        padding: 5px 5px;
         color: $black;
-        font-size: 18px;
+        font-size: 14px;
       }
     }
   }
@@ -640,7 +653,9 @@ section.box-content{
   a:hover{
     color: $white;
   }
-
+  .copyright-info, .company-links{
+    padding:10px 0;
+  }
 }
 
 @include respond-to($break-1199){
@@ -685,22 +700,26 @@ section.box-content{
       text-align: right;
       cursor: pointer;
       .btn-menu{
-        font-size: 40px;
+        font-size: 25px;
         color: #fff;
         padding-right: 10px;
         cursor: pointer;
       }
       .home-mobile{
         position: absolute;
-        top: 0;
+        top: 5px;
         left: 0;
       }
       .post-mobile{
         position: absolute;
-        top: 0;
+        top: 5px;
         left: calc(50% - 24px);
         color: $white;
+
       }
+      .btn-home-mobile{
+         font-size: 25px;
+       }
     }
     .menu-top{
       height: 0;
@@ -708,7 +727,6 @@ section.box-content{
       text-align: left;
       .item-menu{
         display: block;
-        border-bottom: 1px solid $black-dark;
         position: relative;
         &>a{
           color: $white;

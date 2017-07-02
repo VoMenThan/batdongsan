@@ -18,10 +18,10 @@
                     <div class="form-group row">
                         <div class="col-sm-12 d-flex justify-content-center">
                             <button type="submit" class="btn btn-primary mr-3">Đăng nhập</button>
-                            <button type="button" class="btn btn-primary">Đăng ký</button>
+                            <button type="button" class="btn btn-primary"><a href="register.php" style="color:#fff; text-decoration: none">Đăng ký</a></button>
                         </div>
                     </div>
-                    <div class="resetpassword form-group row"><a class="col-10 offset-1" href="#">Quên mật khẩu?</a></div>
+                    <div class="resetpassword form-group row"><a class="col-10 offset-1" href="forgot-pass.php">Quên mật khẩu?</a></div>
                 </form>
             </main>
         <!--end main-->

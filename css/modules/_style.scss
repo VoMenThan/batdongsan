@@ -190,7 +190,7 @@ section.box-content{
       border: none;
       font-size: 10px;
       text-transform: uppercase;
-      padding: 4px;
+      padding: 10px;
       text-decoration: none;
       display: block;
     }
@@ -427,8 +427,8 @@ section.box-content{
 /*css tin tuc right*/
 .news-feed{
   background: $white;
-  padding: 15px;
   padding-bottom: 0;
+  margin: 0;
   @include border-radius(3px);
   a{
     text-decoration: none;
@@ -437,7 +437,9 @@ section.box-content{
     border-bottom: 1px solid $gray;
     padding-bottom: 15px;
     margin-bottom: 15px;
-    height: 100px;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
     &:last-child{
       border-bottom: none;
     }
@@ -446,6 +448,10 @@ section.box-content{
     }
     a{
       margin-left: 5px;
+    }
+    .img-news{
+      width: 80px;
+      height: auto;
     }
   }
   .fix-image-news{
@@ -483,6 +489,10 @@ section.box-content{
 .fix-box-left{
   background: $white;
   font-size: 14px;
+  img{
+    width: 100%;
+    @include radius(3px);
+  }
 }
 /*box post news*/
 .box-detail-item{
@@ -490,11 +500,12 @@ section.box-content{
   padding: 15px;
   @include radius(3px);
   h1{
-    font-size: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    background: $black;
+    color: $white;
     padding: 15px 0;
     margin-bottom: 20px;
-    background: $green;
-    color: $black;
     padding-left: 15px;
     @include radius(3px);
   }
@@ -513,18 +524,20 @@ section.box-content{
 .box-view-detail{
   .detail-item{
     .text-title{
-      font-size: 25px;
+      font-size: 20px;
       font-family: $main-b;
     }
     .text-content{
-      font-size: 22px;
-      line-height: 30px;
+      font-size: 16px;
+      line-height: 20px;
     }
   }
   .row-item{
     margin-bottom: 40px;
     i{
-      color: $green;
+      color: $yellow-gold;
+      font-size: 25px;
+      width: 40px;
     }
   }
   .box-breadcrumb{
@@ -546,6 +559,8 @@ section.box-content{
   h1{
     background: transparent;
     padding-left: 0;
+    color: $black;
+    font-family: $main-b;
   }
   p{
     padding-bottom: 20px;
@@ -569,7 +584,7 @@ section.box-content{
 }
 /*footer css*/
 .footer{
-  padding: 100px 0;
+  padding: 50px 0;
   background: $black-dark;
 }
 .box-footer{
@@ -657,7 +672,9 @@ section.box-content{
     padding:10px 0;
   }
 }
+@include respond-to($break-1440){
 
+}
 @include respond-to($break-1199){
   .one-show-desktop{
     display: none;
@@ -741,7 +758,7 @@ section.box-content{
         .icon-arrow-rigt{
           position: absolute;
           right: 30px;
-          top: 5px;
+          top: 7px;
           font-size: 22px;
         }
         .icon-mobile{

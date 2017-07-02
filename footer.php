@@ -3,7 +3,7 @@
 <section class="box-footer">
     <div class="footer row">
         <div class="box-footer mb-5 col-lg-3 offset-lg-2 col-md-4">
-            <img src="images/bat-dong-san-37.png" alt="bất động sản">
+            <a href="index.php"><img src="images/bat-dong-san-37.png" alt="bất động sản"></a>
             <ul class="list-menu">
                 <li>
                     <a href="#" class="clearfix"><i class="fa fa-map-marker icon-circle" aria-hidden="true"></i><span>Số 10, hẻm 2, ngõ 126, Phan Chu Trinh, thành phố Vinh, Nghệ An</span><span class="clear"></span></a>
